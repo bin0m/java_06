@@ -9,7 +9,7 @@ PostgreSQL
 ``` xml
 <groupId>com.github.spring-mvc-archetypes</groupId>
 <artifactId>spring-mvc-quickstart</artifactId>
-<version>1.0.0-SNAPSHOT</version>
+<version>1.0.0</version>
 ```
 
 Реализация DAO через сериализацию
