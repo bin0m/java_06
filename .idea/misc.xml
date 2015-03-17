@@ -4,6 +4,7 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/PostgreDemo" />
     <file type="web" url="file://$PROJECT_DIR$/PostreSQLDemo" />
   </component>
   <component name="IdProvider" IDEtalkID="ED487134F795A85F1D216AAAA9732D08" />
@@ -12,8 +13,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/WebServiceDemo/pom.xml" />
-        <option value="$PROJECT_DIR$/PostreSQLDemo/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/PostgeSQL2/pom.xml" />
+        <option value="$PROJECT_DIR$/WebServiceDemo/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

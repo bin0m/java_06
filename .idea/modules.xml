@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01_DateTime/01_DateTime.iml" filepath="$PROJECT_DIR$/01_DateTime/01_DateTime.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PostgeSQL2/PostgeSQL2.iml" filepath="$PROJECT_DIR$/PostgeSQL2/PostgeSQL2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PostreSQLDemo/PostreSQLDemo.iml" filepath="$PROJECT_DIR$/PostreSQLDemo/PostreSQLDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServiceDemo/WebServiceDemo.iml" filepath="$PROJECT_DIR$/WebServiceDemo/WebServiceDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PostgreDemo/PostgreDemo.iml" filepath="$PROJECT_DIR$/PostgreDemo/PostgreDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_06.iml" filepath="$PROJECT_DIR$/java_06.iml" />
     </modules>
   </component>
