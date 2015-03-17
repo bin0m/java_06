@@ -1,3 +1,12 @@
+PostgreSQL
+----------
+
+* http://www.postgresql.org - основной сайт
+* http://www.postgresql.org/download/ - для скачивания
+* Реально скачиваем с: http://www.enterprisedb.com/products-services-training/pgdownload#windows - выбираем разрядность своей ОС
+* Утилита для администрирования: pgAdmin III: http://www.postgresql.org/ftp/pgadmin3/release/v1.20.0/win32/
+
+
 
 Реализация DAO через сериализацию
 ---------------------------------
@@ -32,6 +41,9 @@ b: true
 * Изучить примеры к Tomcat
   * tomcat\webapps\examples\jsp\jsp2\el\composite.jsp - путь к примеру в папке.
   * http://localhost:8080/examples/jsp/jsp2/el/composite.jsp - путь к примеру в браузере.
+
+
+
 
 Литература 
 ----------
