@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="PostreSQLDemo:war">
-    <output-path>$PROJECT_DIR$/PostreSQLDemo/target</output-path>
-    <root id="archive" name="PostgeSQLDemo-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="PostreSQLDemo:war exploded" />
-    </root>
-  </artifact>
-</component>
