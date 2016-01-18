@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/01_JavaLists/JavaLists.iml" filepath="$PROJECT_DIR$/01_JavaLists/JavaLists.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01_Thread/01_Thread.iml" filepath="$PROJECT_DIR$/01_Thread/01_Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_Atomic/02_Atomic.iml" filepath="$PROJECT_DIR$/02_Atomic/02_Atomic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Properties/03_Properties.iml" filepath="$PROJECT_DIR$/03_Properties/03_Properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Final/04_Final.iml" filepath="$PROJECT_DIR$/04_Final/04_Final.iml" />
       <module fileurl="file://$PROJECT_DIR$/PostgreDemo/PostgreDemo.iml" filepath="$PROJECT_DIR$/PostgreDemo/PostgreDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_06.iml" filepath="$PROJECT_DIR$/java_06.iml" />
     </modules>

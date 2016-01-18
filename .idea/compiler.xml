@@ -18,15 +18,44 @@
         <processorPath useClasspath="true" />
       </profile>
       <profile default="false" name="Annotation profile for PostgreDemo" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="PostgreDemo" />
       </profile>
+      <profile default="false" name="Annotation profile for JavaLists" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="JavaLists" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="02_Atomic" />
+        <module name="03_Properties" />
+        <module name="04_Final" />
+      </profile>
+      <profile default="false" name="Annotation profile for 01_Thread" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="01_Thread" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="01_JavaLists" target="1.8" />
+      <module name="01_Thread" target="1.8" />
+      <module name="02_Atomic" target="1.5" />
+      <module name="03_Properties" target="1.5" />
+      <module name="04_Final" target="1.5" />
       <module name="java_06" target="1.5" />
+      <module name="JavaLists" target="1.8" />
       <module name="PostgreDemo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
