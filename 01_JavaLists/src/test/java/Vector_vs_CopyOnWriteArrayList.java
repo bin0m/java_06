@@ -1,6 +1,8 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -58,9 +60,18 @@ public class Vector_vs_CopyOnWriteArrayList extends Assert {
         assertEquals(11, ints.size());
     }
 
+    /**
+     * Тест с основной операцией - чтение
+     *
+     * @param list тестируемый список
+     */
     void readTest(List<Integer> list) {
-        for (int t = 0; t < 20000; t++) {
-            // Добавляем элемент в список
+        final int N = 20000;
+        // Всего добавлений: N -> 20000
+        // Всего чтений:  N*N/2 -> 200000000
+        // Добавляем много элементов
+        for (int t = 0; t < N; t++) {
+            // Добавляем очередной элемент в список
             list.add(t);
             // Читаем (проверяем) все элементы
             for (int i = 0; i < list.size(); i++)
@@ -89,12 +100,28 @@ public class Vector_vs_CopyOnWriteArrayList extends Assert {
         readTest(new CopyOnWriteArrayList<>());
     }
 
+    /**
+     * Основная операция - чтение: CopyOnWriteArrayList
+     */
+    @Test
+    public void testReadSyncArrayList() {
+        readTest(Collections.synchronizedList(
+                new ArrayList<Integer>()));
+    }
+
+    /**
+     * Тестирование скорости записи (добавления элемента)
+     * Основная операция: add
+     *
+     * @param list тестируемый список
+     */
     void writeTest(List<Integer> list) {
-        for (int t = 0; t < 50000; t++) {
+        for (int t = 0; t < 60000; t++) {
             // Добавляем элемент в список
             list.add(t);
+            // LinkedList<T>   [] ->  <-[]->  <-[]
             // Читаем для проверки только 1 элемент
-            assertEquals(t, list.get(t).intValue());
+            //assertEquals(t, list.get(t).intValue());
         }
     }
 
@@ -111,11 +138,19 @@ public class Vector_vs_CopyOnWriteArrayList extends Assert {
     }
 
     /**
-     * Основная операция - чтение: CopyOnWriteArrayList
+     * Основная операция - запись: CopyOnWriteArrayList
      */
     @Test
     public void testWriteCopyOnWriteArrayList() {
         writeTest(new CopyOnWriteArrayList<>());
     }
 
+    /**
+     * Основная операция - запись
+     */
+    @Test
+    public void testWriteSyncArrayList() {
+        writeTest(Collections.synchronizedList(
+                new ArrayList<>()));
+    }
 }

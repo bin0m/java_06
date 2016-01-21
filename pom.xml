@@ -17,11 +17,14 @@
 
     <modules>
         <module>01_JavaLists</module>
-        <module>01_Thread</module>
-        <module>02_Atomic</module>
-        <module>03_Properties</module>
-        <module>04_Final</module>
+        <module>02_Threads</module>
+        <module>03_Atomic</module>
+        <module>04_Properties</module>
+        <module>05_Final</module>
+        <module>06_Java8_Lambda</module>
         <module>PostgreDemo</module>
+        <module>WebServiceDemo</module>
+        <module>HomeWork</module>
     </modules>
 
     <build>
@@ -37,5 +40,15 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>

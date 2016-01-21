@@ -17,20 +17,6 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for PostgreDemo" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="PostgreDemo" />
-      </profile>
-      <profile default="false" name="Annotation profile for JavaLists" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="JavaLists" />
-      </profile>
       <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -39,6 +25,22 @@
         <module name="02_Atomic" />
         <module name="03_Properties" />
         <module name="04_Final" />
+        <module name="04_Properties" />
+        <module name="05_Final" />
+      </profile>
+      <profile default="false" name="Annotation profile for 01_JavaLists" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="01_JavaLists" />
+      </profile>
+      <profile default="false" name="Annotation profile for 05_Java8_Lambda" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="05_Java8_Lambda" />
       </profile>
       <profile default="false" name="Annotation profile for 01_Thread" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -47,16 +49,58 @@
         <processorPath useClasspath="true" />
         <module name="01_Thread" />
       </profile>
+      <profile default="false" name="Annotation profile for PostgreDemo" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="PostgreDemo" />
+      </profile>
+      <profile default="false" name="Annotation profile for 06_Java8_Lambda" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="06_Java8_Lambda" />
+      </profile>
+      <profile default="false" name="Annotation profile for 02_Threads" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="02_Threads" />
+      </profile>
+      <profile default="false" name="Annotation profile for HomeWork" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="HomeWork" />
+      </profile>
+      <profile default="false" name="Annotation profile for 03_Atomic" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="03_Atomic" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01_JavaLists" target="1.8" />
       <module name="01_Thread" target="1.8" />
       <module name="02_Atomic" target="1.5" />
+      <module name="02_Threads" target="1.8" />
+      <module name="03_Atomic" target="1.8" />
       <module name="03_Properties" target="1.5" />
       <module name="04_Final" target="1.5" />
-      <module name="java_06" target="1.5" />
-      <module name="JavaLists" target="1.8" />
+      <module name="04_Properties" target="1.5" />
+      <module name="05_Final" target="1.5" />
+      <module name="05_Java8_Lambda" target="1.8" />
+      <module name="06_Java8_Lambda" target="1.8" />
+      <module name="HomeWork" target="1.8" />
+      <module name="java_06" target="1.8" />
       <module name="PostgreDemo" target="1.8" />
+      <module name="WebServiceDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

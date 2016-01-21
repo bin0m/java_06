@@ -3,9 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/01_JavaLists" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/01_Thread" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/03_Properties" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/04_Final" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_Threads" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04_Properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_Final" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06_Java8_Lambda" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HomeWork" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PostgreDemo" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

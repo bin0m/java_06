@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/01_JavaLists/JavaLists.iml" filepath="$PROJECT_DIR$/01_JavaLists/JavaLists.iml" />
-      <module fileurl="file://$PROJECT_DIR$/01_Thread/01_Thread.iml" filepath="$PROJECT_DIR$/01_Thread/01_Thread.iml" />
-      <module fileurl="file://$PROJECT_DIR$/02_Atomic/02_Atomic.iml" filepath="$PROJECT_DIR$/02_Atomic/02_Atomic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/03_Properties/03_Properties.iml" filepath="$PROJECT_DIR$/03_Properties/03_Properties.iml" />
-      <module fileurl="file://$PROJECT_DIR$/04_Final/04_Final.iml" filepath="$PROJECT_DIR$/04_Final/04_Final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01_JavaLists/01_JavaLists.iml" filepath="$PROJECT_DIR$/01_JavaLists/01_JavaLists.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_Threads/02_Threads.iml" filepath="$PROJECT_DIR$/02_Threads/02_Threads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Atomic/03_Atomic.iml" filepath="$PROJECT_DIR$/03_Atomic/03_Atomic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Properties/04_Properties.iml" filepath="$PROJECT_DIR$/04_Properties/04_Properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_Final/05_Final.iml" filepath="$PROJECT_DIR$/05_Final/05_Final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_Java8_Lambda/06_Java8_Lambda.iml" filepath="$PROJECT_DIR$/06_Java8_Lambda/06_Java8_Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HomeWork/HomeWork.iml" filepath="$PROJECT_DIR$/HomeWork/HomeWork.iml" />
       <module fileurl="file://$PROJECT_DIR$/PostgreDemo/PostgreDemo.iml" filepath="$PROJECT_DIR$/PostgreDemo/PostgreDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServiceDemo/WebServiceDemo.iml" filepath="$PROJECT_DIR$/WebServiceDemo/WebServiceDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_06.iml" filepath="$PROJECT_DIR$/java_06.iml" />
     </modules>
   </component>
