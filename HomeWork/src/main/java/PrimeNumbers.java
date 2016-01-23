@@ -6,27 +6,39 @@ public class PrimeNumbers {
     JButton findAllPrimes;
     JSpinner fromValue;
     JPanel mainPanel;
+    // Список простых чисел
+    DefaultListModel<String> primes;
+    private JList list1;
 
     public PrimeNumbers() {
-        fromValue.setValue(2000000000);
-        toValue.setValue(2100000000);
+        SpinnerNumberModel fromValueModel =
+                new SpinnerNumberModel(2000000000, 1, Integer.MAX_VALUE, 1);
+        fromValue.setModel(fromValueModel);
 
-        // Список чисел
-        DefaultListModel<String> primes = new DefaultListModel<>();
+        SpinnerNumberModel toValueModel =
+                new SpinnerNumberModel(2100000000, 1, Integer.MAX_VALUE, 1);
+        toValue.setModel(toValueModel);
+
+        // Список чисел:
+        // 1. Создаем список специального вида - модель данных для отображения в JList
+        primes = new DefaultListModel<>();
+        // 2. Назначаем "нашему" JList эту модель для отображения
         primesList.setModel(primes);
+        // Можно показывать те же данные в другом списке
+        list1.setModel(primes);
 
-        findAllPrimes.addActionListener(actionEvent -> new Thread(() -> {
-            int from = (int) fromValue.getValue();
-            int to = (int) toValue.getValue();
+        // Добавляем обработчик нажания к кнопке
+        findAllPrimes.addActionListener(actionEvent -> new Thread(() ->
+        {
+            // Получаем границу интервала "от" из интерфейса
+            int from = fromValueModel.getNumber().intValue();
+            int to = toValueModel.getNumber().intValue();
+
             System.out.println("Поиск простых чисел в диапазоне " + from + "..." + to);
 
             for (int p = from; p <= to; p++) {
                 if (isPrime(p)) {
-                    final int prime = p;
-                    SwingUtilities.invokeLater(() -> {
-                        // Действия между событиями Swing
-                        primes.addElement(Integer.toString(prime));
-                    });
+                    showPrimeNumber(p);
                 }
             }
         }).start());
@@ -46,14 +58,23 @@ public class PrimeNumbers {
         frame.setVisible(true);
     }
 
+    void showPrimeNumber(int prime) {
+        SwingUtilities.invokeLater(() -> {
+            // Действия между событиями Swing
+            primes.addElement(Integer.toString(prime));
+        });
+    }
+
     /**
      * @param p целое число
      * @return является ли простым?
      */
-    boolean isPrime(long p) {
+    boolean isPrime(int p) {
         if (p <= 1)
             return false;
-        for (int i = 2; i * i <= p; i++)
+        if (p == 2)
+            return true;
+        for (int i = 3; i * i <= p; i += 2)
             if (p % i == 0) return false;
         return true;
     }
