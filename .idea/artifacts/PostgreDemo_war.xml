@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="PostgreDemo:war">
-    <output-path>$PROJECT_DIR$/PostgreDemo/target</output-path>
-    <root id="archive" name="PostgreDemo-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="PostgreDemo:war exploded" />
-    </root>
-  </artifact>
-</component>
