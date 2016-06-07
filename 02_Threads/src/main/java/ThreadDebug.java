@@ -41,7 +41,7 @@ public class ThreadDebug {
     static public class MyClass {
         public int i;
 
-        synchronized public void inc() {
+        synchronized void inc() {
             i++;
             System.out.println(Thread.currentThread().getName());
         }

@@ -5,11 +5,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 // Работа с потоками
 // -----------------
 public class Main {
-    public static final SharedClass lock = new SharedClass();
-    public static final Queue<String> strings = new LinkedList<String>();
-    public static int globalVar = 0;
-    public static AtomicInteger atomicInteger = new AtomicInteger(0);
-    public static boolean var2 = false;
+    static final SharedClass lock = new SharedClass();
+    static final Queue<String> strings = new LinkedList<String>();
+    static int globalVar = 0;
+    static AtomicInteger atomicInteger = new AtomicInteger(0);
+    static boolean var2 = false;
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Имя главного потока: " +

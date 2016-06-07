@@ -1,8 +1,8 @@
 /**
  * Разделяемый класс
  */
-public class SharedClass {
-    public synchronized void increment() {
+class SharedClass {
+    synchronized void increment() {
         Main.globalVar++;
     }
 }

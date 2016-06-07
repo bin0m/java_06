@@ -65,7 +65,7 @@ public class Vector_vs_CopyOnWriteArrayList extends Assert {
      *
      * @param list тестируемый список
      */
-    void readTest(List<Integer> list) {
+    private void readTest(List<Integer> list) {
         final int N = 20000;
         // Всего добавлений: N -> 20000
         // Всего чтений:  N*N/2 -> 200000000
@@ -115,7 +115,7 @@ public class Vector_vs_CopyOnWriteArrayList extends Assert {
      *
      * @param list тестируемый список
      */
-    void writeTest(List<Integer> list) {
+    private void writeTest(List<Integer> list) {
         for (int t = 0; t < 60000; t++) {
             // Добавляем элемент в список
             list.add(t);

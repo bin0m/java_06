@@ -2,7 +2,7 @@
  * Демонстрация работы с потоками
  */
 public class ThreadDemo {
-    public static final int ITERATIONS = 1000;
+    private static final int ITERATIONS = 1000;
     static Integer counter = 0;
     static MyClass myClass = new MyClass();
 
@@ -54,7 +54,7 @@ public class ThreadDemo {
     static class MyClass {
         int counter = 0;
 
-        public void inc() {
+        void inc() {
             //counter++;
             synchronized (this) {
                 counter++;

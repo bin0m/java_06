@@ -1,10 +1,10 @@
 /**
  * Первый поток
  */
-public class Thread1 extends Thread {
-    public static boolean ready = false;
+class Thread1 extends Thread {
+    static boolean ready = false;
 
-    public Thread1(String name) {
+    Thread1(String name) {
         super(); // Конструктор предка
         setName(name);
     }

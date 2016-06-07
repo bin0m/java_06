@@ -32,8 +32,8 @@ public class SyncThread3 {
         }
     }
 
-    static class Value {
-        public int x = 0;
+    private static class Value {
+        int x = 0;
 
         synchronized void inc() {
             x++;

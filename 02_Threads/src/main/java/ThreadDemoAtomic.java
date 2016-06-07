@@ -8,34 +8,28 @@ public class ThreadDemoAtomic {
     static MyClass myClass = new MyClass();
 
     public static void main(String[] args) {
-        Thread thread1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 100; i++) {
+        Thread thread1 = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
 
-                    myClass.inc();
-                    System.out.println("1) i = " + i);
-                    try {
-                        Thread.sleep(10);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                myClass.inc();
+                System.out.println("1) i = " + i);
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         });
         thread1.start();
-        Thread thread2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 100; i++) {
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
 
-                    myClass.inc();
-                    System.out.println("2) i = " + i);
-                    try {
-                        Thread.sleep(10);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                myClass.inc();
+                System.out.println("2) i = " + i);
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         });
@@ -54,7 +48,7 @@ public class ThreadDemoAtomic {
     static class MyClass {
         AtomicInteger counter = new AtomicInteger(0);
 
-        public void inc() {
+        void inc() {
             counter.getAndIncrement();
         }
     }

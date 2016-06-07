@@ -1,7 +1,7 @@
 /**
  * Второй поток
  */
-public class Thread2 implements Runnable {
+class Thread2 implements Runnable {
 
     @Override
     public void run() {

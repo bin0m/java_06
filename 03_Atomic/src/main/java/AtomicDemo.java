@@ -50,13 +50,13 @@ public class AtomicDemo {
         System.out.println("ATOMIC_SUM = " + ATOMIC_SUM.get());
     }
 
-    static void inc() {
+    private static void inc() {
         synchronized (LOCK) {
             sum++;
         }
     }
 
-    static class MyThread extends Thread {
+    private static class MyThread extends Thread {
         @Override
         public void run() {
             threadCount++;
