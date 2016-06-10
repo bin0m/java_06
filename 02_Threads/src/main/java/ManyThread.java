@@ -44,23 +44,25 @@ public class ManyThread {
             //                            2+1 = 3
             //                            Записал 3
             for (int i = 0; i < 10000; i++) {
-                final int N = i + 1;
+                //final int N = i + 1;
                 Thread thread = new Thread(() -> {
-                    int threadNo = N;
                     pause();
-                    myClass.inc();
+                    for (int j = 0; j < 100; j++) {
+                        counter++;
+                    }
+                 /*   int threadNo = N; */
+                    pause();
+                    MyClass.inc4();
                     pause();
                     MyClass.incStatic();
                     pause();
-                    int value = counter;
-                    pause();
-                    counter = value + 1;
                     atomicCounter.addAndGet(1);
                     pause();
                     // lock - мьютекс
                     synchronized (lock) {
-                        int value2 = counterLock;
-                        counterLock = value2 + 1;
+                        counterLock++;
+                        //int value2 = counterLock;
+                        //counterLock = value2 + 1;
                     }
                     //pause();
                 });
@@ -81,15 +83,19 @@ public class ManyThread {
     static class MyClass {
         static int counter;
 
+        static void incStatic2() {
+            synchronized (MyClass.class) {
+                counter++;
+            }
+        }
+
         // MyClass.class
         synchronized static void incStatic() {
             counter++;
         }
 
-        static void incStatic2() {
-            synchronized (MyClass.class) {
-                counter++;
-            }
+        static void inc4() {
+            counter++;
         }
 
         // this
@@ -99,6 +105,12 @@ public class ManyThread {
 
         void inc2() {
             synchronized (this) {
+                counter++;
+            }
+        }
+
+        void inc3() {
+            synchronized (MyClass.class) {
                 counter++;
             }
         }

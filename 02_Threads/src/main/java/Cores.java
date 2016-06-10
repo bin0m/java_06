@@ -10,7 +10,7 @@ public class Cores {
                 while (true) ; // nothing
             }
         }
-        Thread[] threads = new Thread[3];
+        Thread[] threads = new Thread[2];
         for (int i = 0; i < threads.length; i++) {
             threads[i] = new Thread(new HardTask());
             threads[i].start();

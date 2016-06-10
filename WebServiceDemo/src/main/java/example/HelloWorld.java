@@ -21,4 +21,9 @@ public class HelloWorld {
         System.out.println(result);
         return result;
     }
+
+    @WebMethod
+    public int addNumbers(int a, int b, String xxx) {
+        return a + b;
+    }
 }

@@ -1,7 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -59,11 +58,11 @@ public class PropertiesTest extends Assert {
 
         Properties properties = new Properties();
         properties.load(new InputStreamReader(input, "UTF-8"));
-        properties.load(
+       /* properties.load(
                 new InputStreamReader(
                         new FileInputStream("D:/a.mydata"),
                         "UTF-8"));
-
+*/
         Enumeration<?> e = properties.propertyNames();
         while (e.hasMoreElements()) {
             String key = (String) e.nextElement();

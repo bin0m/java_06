@@ -6,7 +6,10 @@ public class ThreadsExceptions {
             try {
                 throw new IllegalArgumentException("Exception in thread");
             } catch (Throwable e) {
+                e.printStackTrace();
+                // Прерываем основной поток приложения
                 mainThread.interrupt();
+                throw e;
             }
         }).start();
         for (int i = 0; i < 100; i++) {
@@ -14,5 +17,4 @@ public class ThreadsExceptions {
             Thread.sleep(100);
         }
     }
-
 }
