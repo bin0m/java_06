@@ -22,9 +22,11 @@
         <module>04_Properties</module>
         <module>05_Final</module>
         <module>06_Java8_Lambda</module>
-        <module>PostgreDemo</module>
-        <module>WebServiceDemo</module>
         <module>HomeWork</module>
+        <module>LambdaDemo</module>
+        <module>PostgreDemo</module>
+        <module>SpringHibernateMySQL</module>
+        <module>WebServiceDemo</module>
     </modules>
 
     <build>
